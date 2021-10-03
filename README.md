@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# 프로젝트 주제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+여러가지 기술을 실제로 사용해 보면서 구현 능력 및 프로젝트를 이끌어 나가는 능력을 시험해보기 위한 프로젝트 입니다.
 
-## Available Scripts
+# 사용기술
 
-In the project directory, you can run:
+주 개발 언어: typescript  
+front: react, antd
+back: nestjs
 
-### `yarn start`
+# antd 선정 이유
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+css와 부차적인 DOM 조작을 위한 시간을 줄이고 싶음.  
+예상되는 문제점: antd의 규모가 커서 초기 DOM 로딩이 느려질 가능성이 있음.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 현재 구현중인 기능
 
-### `yarn test`
+회원기능
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 회원가입 (아이디, 비밀번호, 이름) (page: /signup)
+2. 회원탈퇴 (page: /:userId 버튼으로 동작 Auth:본인만)
+3. 회원정보 수정(page: /:userId 버튼으로 동작 Auth:본인만)
+4. 회원정보 조회(page: /:userId Auth:본인만)
+5. 로그인/로그아웃 기능(현재 강의보면서 구현한 코드가 JWT이므로 JWT로 인증 기능을 구현하기로 했음)
 
-### `yarn build`
+## 구현순서
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. 회원가입
+2. 로그인/로그아웃
+3. 회원정보 조회
+4. 회원정보 수정
+5. 회원정보 삭제
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+백엔드는 이미 구현이 되어 있으므로 프론트만 구현을 시작하면 될 것 같음.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 이번 프로젝트에서 가장 신경 쓰고 싶은 점
 
-### `yarn eject`
+구현 전에 구현 계획을 반드시 세울 것.  
+테스트 코드를 반드시 작성할 것.
+문서화를 반드시 할 것.
+작성 하는 코드에 반드시 이유가 있어야 함.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 어려웠던 점 정리
