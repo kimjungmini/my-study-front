@@ -49,3 +49,9 @@ css와 부차적인 DOM 조작을 위한 시간을 줄이고 싶음.
 작성 하는 코드에 반드시 이유가 있어야 함.
 
 # 어려웠던 점 정리
+
+antd의 form 데이터에 어떻게 접근해야 고민하고 있었는데 useForm을 통해서 Form에 prop을 넘겨주면 쉽게 form 데이터를 조작할 수 있음.ㄴ
+
+```js
+const [form] = Form.useForm();
+```
