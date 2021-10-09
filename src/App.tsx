@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { FC } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import './App.css';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Signup from './pages/Signup';
+import "./App.css";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Signup from "./pages/Signup";
 
 const App: FC = () => (
   <Router>
