@@ -1,12 +1,14 @@
 import { FC } from "react";
 import { Form, Input, Button, Typography  } from 'antd';
+import { SingupFormType } from '../types';
+import { ValidateErrorEntity } from "rc-field-form/lib/interface";
 
 const { Title } = Typography;
 
 const Signup:FC = () => {
   const [form] = Form.useForm();
-  
-  const onFinish = (values: any) => {
+    
+  const onFinish = (values: SingupFormType) => {
     console.log('Success:', values);
     form.resetFields();
     /*
@@ -16,7 +18,8 @@ const Signup:FC = () => {
     */
   };
 
-  const onFinishFailed = (errorInfo: any) => {
+  //흠 여기도 타이핑을 해주고 싶은데
+  const onFinishFailed = (errorInfo: ValidateErrorEntity<SingupFormType>) => {
     console.log('Failed:', errorInfo);
     form.resetFields();
     /*
